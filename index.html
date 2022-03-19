@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <title>O.Winston</title>
+    <meta name="description" content="HTML tutorial">
+    <meta name="keywords" 
+    content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Rui Jesus">
+    <meta http-equiv="refresh" content="30"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="Css/style.css">
+    
+</head>
+<!---Content starts here -->
+<body>
+    <header>
+
+        <div id="drawer">
+            <nav>
+        <a href="#home"> Home </a> 
+        <a href="#biography"> Biography </a>
+        <a href="#images"> Images</a>
+        <a href="#works"> Works</a>
+        <a href="#career"> Career </a>
+        <a href="#video"> Video </a>
+            </nav>
+         </div>
+         <a id="menu_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/> </svg>
+            </a>
+
+        <br/>
+<h1> Ogle Winston Link </h1> 
+<p>American Photographer </p>
+<br/>
+</header>
+
+
+<nav id="tabletPC" class= "col-3">
+    <a href="#home"> Home</a>
+    <a href="#biography"> Biography</a>
+    <a href="#images"> Images</a>
+    <a href="#works"> Works</a>
+    <a href="#career"> Career</a>
+    <a href="#video"> Video </a>
+</nav>
+
+<div id="container" class="col-9">
+
+<section>
+<a name="home"></a>
+<h2>Home</h2>
+<p> <i>I never expected that. I didn't aim for that. All I wanted was to get some nice pictures of trains at night.</i></p>
+
+    <section class="slideshow-container">
+
+    <article class="mySlides" class="fade"> 
+        <figure>
+    <img src="imagens/imagem1.jpg"> 
+    <figcaption>Hotshot eastbound at the iaeger drive-in, West Virginia, 1956</figcaption> 
+</figure>
+</article>
+    <article class="mySlides" class="fade"> <figure>
+    <img src="imagens/imagem2.jpg">
+    <figcaption>Abingdon Branch, waiting for the creeper in the green cove station, Virginia, 1956 </figcaption> 
+</figure>
+    </article>
+
+    <article class="mySlides" class="fade"> <figure>
+        <img src="imagens/imagem3.jpg">
+        <figcaption>Birmingham Special, Rural Retreat, V.A., December, 1957</figcaption> 
+    </figure>
+        </article>
+
+        <div class="dotpoints">
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+        </div>
+</br>
+
+
+</section>
+<section>
+    <a name="biography"></a>
+    <h2> Biography </h2>
+    <ul>
+        <li> Link was born in 1914 in Brooklyn, NY and as a teenager he developed early interests in photography, locomotives and rail yards. </li>
+    </br>
+        <li> Link received a civil engineering degree from the Polytechnic Institute of Brooklyn in 1937 and soon after he took a job as a photographer for a public relations firm.</li>
+    </br>
+        <li> Link worked for over 40 years as a commercial photographer with his most famous project being the series of the Norfolk and Western Railway.</li>
+    </br>
+        <li> Link was eager to photograph the end of the steam engine in such a way that the images would be a long lasting tribute to this period. </li>
+        </ul>
+    </section>
+    
+</br>
+<section>
+<a name="images"> </a>
+<h2> Images </h2>
+</br>
+<img src = "imagens/image6.jpeg" width="200" height="auto">
+<img src = "imagens/image4.webp" width="200" height="auto">
+<img src = "imagens/image5.jpeg" width="200" height="auto">
+</section>
+
+</br>
+<section>
+<a name="works"></a>
+<h2> Works </h2>
+
+<table border="6px">
+
+
+    <th colspan="3"> O. WINSTON LINK </th> <tr>
+    <td> Steam, Steel, and Stars </td> <td> Book </td> <td> 1987 </td> </tr>
+    <tr>
+     <td> The Last Steam Railroad in America </td> <td> Book</td> <td> 1995 </td> </tr>
+     <tr>
+    <td>  October Sky </td> <td> Movie </td> <td> 1999 </td> </tr>
+    <tr>
+    <td rowspan="4"> Photographer, His Wife, Her Lover, The </td>
+    <td rowspan="3"> Movie </td>
+    <td> 2005 </td> </tr>
+
+     </table>
+
+</section>
+
+</br>
+
+<section>
+    <a name="career">
+    <h2> Career </h2>
+<i> Highlights </i> 
+<ol>
+<li><u> Group show at a major institution - Museum of Modern Art (MoMA) </u></li>
+<li><u> Collected by a major institution - Museum of Modern Art (MoMA) </u></li> 
+<li><u> Reviewed by a major art publication - Artforum, frieze. </u> </li>
+</ol>
+</section>
+
+<section>
+<a name="video"> </a>
+<h2> Video </h2>
+<p> <iframe width="500" height="1000" src="https://www.youtube.com/embed/GfId5bbfC2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+</section>
+</div>
+
+<section>
+<aside class="col-2">
+    <h3>O.Winston</h3>
+    <p> 1914 - 2001 </p>
+</br>
+    <img src = "imagens/image7.jpeg" width="100" height="100">
+    </aside>
+</section>
+    
+    <footer>
+        <h2>Developed by Catarina Rufino and Margarida Neri</h2>
+        </footer>
+
+        <script>
+let menu_icon = document.querySelector('#menu_icon'); 
+let container = document.querySelector("#container"); 
+let drawer = document.querySelector('#drawer');
+menu_icon.addEventListener('click', function (e) {
+drawer.classList.toggle('open'); 
+e.stopPropagation();
+});
+container.addEventListener('click', function () {
+drawer.classList.remove('open'); 
+});
+
+let slideIndex = 0; showSlides();
+function showSlides() { let i = null;
+let slides = document.getElementsByClassName("mySlides"); 
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none"; }
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", ""); }
+slides[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " active"; setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+
+        </script>
+       
+</body>
+<!---Content ends here -->
+</html>
